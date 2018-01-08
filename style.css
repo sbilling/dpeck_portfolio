@@ -56,6 +56,8 @@ body {
   background-color: white;
   zoom: 110%;
   margin-bottom: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  width: 100%;
 }
 
 h1 {
@@ -138,6 +140,22 @@ a:hover::before, a:focus::before {
   background-image: url("img/web_header3x.png");
 }
 
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -182,9 +200,8 @@ img {
     height: 7%;
     width: 100%;
     background-color: white;
-    border-color: black;
-    border-style: solid;
-    border-width: 0.3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    width: 100%;
 }
 
 .card {
@@ -199,4 +216,75 @@ img {
 
 .container {
     padding: 2px 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        height: 10%
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .footer {
+        height: 4%
+    }
+
+    .navbar {
+      height: 6%;
+      zoom: 20%
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .footer {
+        height: 4%
+    }
+
+    .navbar {
+      height: 7%;
+      zoom: 40%
+    }
+
+    .abovefold {
+      margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .footer {
+        height: 3.5%
+    }
+}
+
+@media screen and (max-height: 375px) {
+    .footer {
+        height: 10%
+    }
+
+    .navbar {
+      height: 6%;
+      zoom: 20%
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .footer {
+        height: 10%
+    }
+
+    .navbar {
+      height: 8%;
+      zoom: 20%
+    }
+}
+
+@media screen and (max-height: 414px) {
+    .footer {
+        height: 10%
+    }
+
+    .navbar {
+      height: 8%;
+      zoom: 20%
+    }
 }

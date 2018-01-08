@@ -1,43 +1,30 @@
-window.alert = function() {};
-var defaultCSS = document.getElementById('bootstrap-css');
+$(function() {
 
-function changeCSS(css) {
-	if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
-	else $('head > link').filter(':first').replaceWith(defaultCSS);
-}
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
+    var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
+    $fluidEl = $("figure");
+
+	$allVideos.each(function() {
+
+	  $(this)
+	    // jQuery .data does not work on object/embed elements
+	    .attr('data-aspectRatio', this.height / this.width)
+	    .removeAttr('height')
+	    .removeAttr('width');
+
+	});
+
+	$(window).resize(function() {
+
+	  var newWidth = $fluidEl.width();
+	  $allVideos.each(function() {
+
+	    var $el = $(this);
+	    $el
+	        .width(newWidth)
+	        .height(newWidth * $el.attr('data-aspectRatio'));
+
+	  });
+
+	}).resize();
+
+});
