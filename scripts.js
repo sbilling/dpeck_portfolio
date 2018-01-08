@@ -1,8 +1,10 @@
-window.onresize = function(){
-    var img = document.getElementById('headerfold');
-    img.style.width = "100%";
-};
+window.alert = function() {};
+var defaultCSS = document.getElementById('bootstrap-css');
 
+function changeCSS(css) {
+	if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
+	else $('head > link').filter(':first').replaceWith(defaultCSS);
+}
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
