@@ -1,6 +1,48 @@
 body {
-  margin: 0%;
+  margin: 0;
   font-family: 'Vollkorn', Bold;
+}
+
+.iframe-container {
+  padding-bottom: 60%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    font-size: 70px;
+    color: white;
+    bottom: 10%;
+    left: 16px;
+}
+.bottom-left-further {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    bottom: 8%;
+    left: 20px;
+}
+
+
+.biobanner {
+    margin-left: -5%;
+    height: 60%;
+    background-image: url("img/banner_bio.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 }
 
 .booth {
@@ -37,11 +79,20 @@ body {
   height: 100%;
   background-image: url("img/booth.png");
   background-size: cover;
+  background-position: center;
 }
 
 .imghome2 {
   margin: 0%;
   width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  margin-top: 5%;
+}
+
+.imghomeTEST {
+  margin: 0%;
+  width: 50%;
   height: 100%;
   margin-bottom: 0px;
   margin-top: 5%;
@@ -146,14 +197,19 @@ a:hover::before, a:focus::before {
 	padding-top:30px;
 	height:0;
 	overflow:hidden;
+  margin-bottom: -150px;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
+  position: relative;
+  top:0;
 	left:0;
-	width:100%;
-	height:100%;
+	width:65%;
+	height:60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: -1;
 }
 
 img {
@@ -197,7 +253,7 @@ img {
     float: center;
     left: 0;
     bottom: 0;
-    height: 7%;
+    height: 7.5%;
     width: 100%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
@@ -207,7 +263,7 @@ img {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 710px;
+    width: 30%;
 }
 
 .card:hover {
@@ -216,11 +272,48 @@ img {
 
 .container {
     padding: 2px 16px;
+    z-index: -1;
+    position: relative;
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        height: 10%
+    }
+
+    .navbar {
+      height: 20%;
+      zoom: 20%
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .footer {
         height: 10%
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        height: 10%
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 30%;
     }
 }
 
@@ -233,6 +326,22 @@ img {
       height: 6%;
       zoom: 20%
     }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+    }
+
+    .video-container {
+    	position:relative;
+    	padding-bottom:56.25%;
+    	padding-top:30px;
+    	height:0;
+    	overflow:hidden;
+      margin-bottom: -70px;
+    }
+
 }
 
 @media screen and (max-width: 667px) {
@@ -248,22 +357,56 @@ img {
     .abovefold {
       margin-top: 20%;
     }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 568px) {
     .footer {
         height: 3.5%
     }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .navbar {
+      height: 10%;
+    }
+
+    .footer {
+        height: 4.5%
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 80%;
+    }
 }
 
 @media screen and (max-height: 375px) {
     .footer {
-        height: 10%
+        height: 10%;
     }
 
     .navbar {
-      height: 6%;
+      height: 7%;
       zoom: 20%
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 80%;
     }
 }
 
@@ -276,6 +419,12 @@ img {
       height: 8%;
       zoom: 20%
     }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 80%;
+    }
 }
 
 @media screen and (max-height: 414px) {
@@ -286,5 +435,11 @@ img {
     .navbar {
       height: 8%;
       zoom: 20%
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 80%;
     }
 }
