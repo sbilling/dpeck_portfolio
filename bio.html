@@ -29,7 +29,9 @@
   <div>
     <center>
       <h1>David Peck</h1>
-      <a href="pdf/resume.pdf" target="_blank">View Resume</a>
+      <div style="cursor: pointer;" onclick="openPDF()">
+        View Resume
+      </div>
       <p style="width: 70%; text-align: justify">David Peck is an aspiring sports broadcaster from Old Lyme, Connecticut. Currently a junior at Bowdoin College, David is studying history and theater, and is availing himself of every opportunity to broadcast for the college radio, live games and local sport events. As a former member of both the Bowdoin Varsity Football and Baseball teams, David has gained experience in various broadcasting positions for both the Bowdoin Polar Bears and high school sport teams in Maine. David worked for the Newport Gulls as Field Reporter and Color Commentator during the 2017 NECBL season and is excited to return to Newport as the lead play-by-play broadcaster in 2018. He will be graduating from Bowdoin in 2019 and plans to attend graduate school in the field of sports media.</p>
       <br>
       <br>
@@ -41,4 +43,10 @@
     </center>
   </div>
   </body>
+  <script>
+    function openPDF(){
+      window.open("pdf/resume.pdf");
+      return false;
+    }
+  </script>
 </html>
