@@ -5,7 +5,7 @@
     PDFObject v2.0.201604172
     https://github.com/pipwerks/PDFObject
     Copyright (c) 2008-2016 Philip Hutchison
-    MIT-style license: http://pipwerks.mit-license.org/
+    MIT-style license: https://pipwerks.mit-license.org/
     UMD module pattern from https://github.com/umdjs/umd/blob/master/templates/returnExports.js
 */
 

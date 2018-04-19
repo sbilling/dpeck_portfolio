@@ -14,9 +14,9 @@
     "pdfobject"
   ],
   "authors": [
-  	"Philip Hutchison <philip@pipwerks.com> (http://pipwerks.com)"
+  	"Philip Hutchison <philip@pipwerks.com> (https://pipwerks.com)"
   ],
-  "homepage": "http://pdfobject.com",
+  "homepage": "https://pdfobject.com",
   "repository": {
     "type": "git",
     "url": "git://github.com/pipwerks/PDFObject.git"
