@@ -259,13 +259,13 @@ img {
     width: 100%;
 }
 
-.card {
+.native-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 30%;
 }
 
-.card:hover {
+.native-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -273,6 +273,14 @@ img {
     padding: 2px 16px;
     z-index: -1;
     position: relative;
+}
+
+.container a {
+    color: black;
+}
+
+.container h4 {
+    color: black;
 }
 
 @media screen and (max-width: 320px) {
@@ -285,7 +293,7 @@ img {
       zoom: 20%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 90%;
@@ -297,7 +305,7 @@ img {
         height: 10%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 30%;
@@ -309,7 +317,7 @@ img {
         height: 10%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 30%;
@@ -326,7 +334,7 @@ img {
       zoom: 20%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 40%;
@@ -357,7 +365,7 @@ img {
       margin-top: 20%;
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 80%;
@@ -369,7 +377,7 @@ img {
         height: 3.5%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 80%;
@@ -385,7 +393,7 @@ img {
         height: 4.5%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 80%;
@@ -402,7 +410,7 @@ img {
       zoom: 20%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 80%;
@@ -419,7 +427,7 @@ img {
       zoom: 20%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 80%;
@@ -436,7 +444,7 @@ img {
       zoom: 20%
     }
 
-    .card {
+    .native-card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 80%;
