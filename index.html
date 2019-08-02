@@ -1,48 +1,59 @@
 <html>
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn">
-      <title>Dave Peck</title>
-      <script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Vollkorn"
+    />
+    <title>Dave Peck</title>
+    <script>
       $(document).ready(function() {
-          /*! Fades in page on load */
-          $('body').css('display', 'none');
-          $('body').fadeIn(1300);
-        });
-      </script>
+        /*! Fades in page on load */
+        $("body").css("display", "none");
+        $("body").fadeIn(1300);
+      });
+    </script>
   </head>
   <body>
-    <div class="navbar navbar-nav justify">
-      <nav class="hover-underline-menu" data-menu-underline-from-center>
-        <center>
-        <ul class="menu align-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bio.html">Bio</a></li>
-          <li><a href="radio.html">Demo Reel</a></li>
-          <li><a href="reporting.html">Reporting</a></li>
-          <li><a href="press_release.html">Press Releases</a></li>
-          <li><a href="color_commentary.html">Play-By-Play/Color</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </center>
-    </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a> <a href="bio.html">Bio</a>
+      <a href="radio.html">Demo Reel</a> <a href="reporting.html">Reporting</a>
+      <a href="press_release.html">Press Releases</a>
+      <a href="color_commentary.html">Play-By-Play/Color</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    </center>
     <div class="imghome" id="home_img">
-      <div class="bottom-left">
-        Dave Peck
-      </div>
-      <div class="bottom-left-further">
-        Sports Broadcaster
-      </div>
+      <div class="bottom-left">Dave Peck</div>
+      <div class="bottom-left-further">Sports Broadcaster</div>
     </div>
     <div class="footer">
-      <center>
-        <img src="img/footer3x.png" style="zoom: 40%;">
-      </center>
+      <center><img src="img/footer3x.png" style="zoom: 40%;" /></center>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      }
+    </script>
   </body>
 </html>

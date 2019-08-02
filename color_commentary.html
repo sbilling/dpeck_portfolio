@@ -1,116 +1,178 @@
 <html>
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src ="scripts.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <title>Color Commentary</title>
-      <style>
-        .shadow {
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-          width: 100%;
-        }
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 710px;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Vollkorn"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Color Commentary</title>
+    <style>
+      .shadow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 710px;
+      }
 
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
 
-        .container {
-            padding: 2px 16px;
-        }
-        .vid {
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-          width: 710px;
-          height: 400px;
-        }
-        </style>
+      .container {
+        padding: 2px 16px;
+      }
+      .vid {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 710px;
+        height: 400px;
+      }
+    </style>
   </head>
   <body>
     <center>
-    <div class="navbar navbar-nav justified">
-      <nav class="hover-underline-menu" data-menu-underline-from-center>
-        <ul class="menu align-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bio.html">Bio</a></li>
-          <li><a href="radio.html">Demo Reel</a></li>
-          <li><a href="reporting.html">Reporting</a></li>
-          <li><a href="press_release.html">Press Releases</a></li>
-          <li><a href="color_commentary.html">Play-By-Play/Color</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-  </div>
-  </center>
-  <center>
-  <section class="abovefold">
-          <center>
-
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a> <a href="bio.html">Bio</a>
+        <a href="radio.html">Demo Reel</a>
+        <a href="reporting.html">Reporting</a>
+        <a href="press_release.html">Press Releases</a>
+        <a href="color_commentary.html">Play-By-Play/Color</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </center>
+    <center>
+      <section class="abovefold">
+        <center>
           <h2>Newport Gulls vs. Mystic Schooners Highlights</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/E9gAgEKdf0A?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/E9gAgEKdf0A?rel=0&amp;showinfo=0"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
-          <h2>In-Game Interview with Nashville Predators’ Broadcaster Will Daunic</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I5NiY7AJxmU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+          <h2>
+            In-Game Interview with Nashville Predators’ Broadcaster Will Daunic
+          </h2>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/I5NiY7AJxmU?rel=0&amp;showinfo=0"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
           <h2>Newport Gulls vs. Keene SwampBats Highlights</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ctL_s5vbDlQ?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/ctL_s5vbDlQ?rel=0&amp;showinfo=0"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
           <h2>Newport Gulls Manager Mike Coombs Ejection</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q8aqX1__4Xc?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/Q8aqX1__4Xc?rel=0&amp;showinfo=0"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
           <h2>Bowdoin vs. Husson Half Inning</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/432625389&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" allowfullscreen></iframe>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/432625389&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
           <h2>Bowdoin vs. Bates Half Inning</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ngy1py2bmAI?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/Ngy1py2bmAI?rel=0&amp;showinfo=0"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
           <h2>Bowdoin vs. Colby Football</h2>
-          <div class="embed-responsive embed-responsive-16by9" style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2JW2Rq1M8xw?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+          <div
+            class="embed-responsive embed-responsive-16by9"
+            style="max-width: 710px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/2JW2Rq1M8xw?rel=0&amp;showinfo=0"
+              allowfullscreen
+            ></iframe>
           </div>
-          <br>
-          <br>
-
-          </center>
-          <br>
-    </section>
-    <div class="seperator" style="height: 40%;">
-    </div>
-</center>
-  <div class="footer">
-    <center>
-      <img src="img/footer3x.png" style="zoom: 40%;">
+          <br />
+          <br />
+        </center>
+        <br />
+      </section>
+      <div class="seperator" style="height: 40%;"></div>
     </center>
-  </div>
+    <div class="footer">
+      <center><img src="img/footer3x.png" style="zoom: 40%;" /></center>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      }
+    </script>
   </body>
 </html>
