@@ -458,7 +458,7 @@ img {
 
 .topnav {
   overflow: hidden;
-  position: fixed;
+  /* position: fixed; */
   top: 0px;
   width: 100%;
   background-color: white;
@@ -469,7 +469,6 @@ img {
 .topnav a {
   float: left;
   display: block;
-  /* color: #f2f2f2; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -490,7 +489,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -500,7 +499,7 @@ img {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
