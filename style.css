@@ -46,6 +46,16 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
+.contactbanner {
+  margin-top: 40px;
+  margin-left: -5%;
+  height: 80%;
+  background-image:  url("https://firebasestorage.googleapis.com/v0/b/polareats-dev.appspot.com/o/dpeck_1.jpg?alt=media&token=44bfdf5d-635f-4431-b407-66fe8ef9f6ad");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
 .booth {
   display: flex;
   justify-content: center;
@@ -77,7 +87,7 @@ body {
 .imghome {
   width: 100%;
   height: 100%;
-  background-image: url("https://i.ibb.co/TRXxHqz/Home-Page-Picture.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/polareats-dev.appspot.com/o/dpeck_2.jpg?alt=media&token=70b73c00-dea9-4cc5-94c3-58d144657e93");
   background-size: cover;
   background-position: center;
 }
@@ -268,7 +278,7 @@ img {
 .native-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 30%;
+  width: 90%;
 }
 
 .native-card:hover {
@@ -314,7 +324,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 30%;
+    width: 90%;
   }
 }
 
@@ -326,7 +336,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 30%;
+    width: 90%;
   }
 }
 
@@ -343,7 +353,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 40%;
+    width: 90%;
   }
 
   .video-container {
@@ -373,7 +383,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -385,7 +395,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -401,7 +411,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -418,7 +428,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -435,7 +445,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -452,7 +462,7 @@ img {
   .native-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -489,6 +499,26 @@ img {
   display: none;
 }
 
+.PressReleaseRow {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.PressReleaseColumn {
+  flex: 33%;
+  padding: 10px;
+}
+
+.PressReleaseContainer {
+  max-width: 90%;
+  margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -496,6 +526,16 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+
+  .PressReleaseContainer {
+    max-width: 90%;
+    margin: 0 auto;
+  	display: grid;
+  	grid-template-columns: repeat(1, 1fr);
+  	grid-auto-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
   }
 }
 
