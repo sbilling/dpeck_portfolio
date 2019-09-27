@@ -37,7 +37,6 @@ body {
 }
 
 .biobanner {
-  margin-top: 40px;
   margin-left: -5%;
   height: 80%;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/polareats-dev.appspot.com/o/WEBSITE%20BIO%20PIC.jpeg?alt=media&token=d2622b0c-60ca-4630-bbeb-6b663cd1dd36");
@@ -50,7 +49,7 @@ body {
   margin-top: 40px;
   margin-left: -5%;
   height: 80%;
-  background-image:  url("https://firebasestorage.googleapis.com/v0/b/polareats-dev.appspot.com/o/dpeck_1.jpg?alt=media&token=44bfdf5d-635f-4431-b407-66fe8ef9f6ad");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/polareats-dev.appspot.com/o/dpeck_1.jpg?alt=media&token=44bfdf5d-635f-4431-b407-66fe8ef9f6ad");
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -89,7 +88,7 @@ body {
   height: 100%;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/polareats-dev.appspot.com/o/dpeck_2.jpg?alt=media&token=70b73c00-dea9-4cc5-94c3-58d144657e93");
   background-size: cover;
-  background-position: center;
+  background-position-y: 30%;
 }
 
 .imghome2 {
@@ -480,7 +479,7 @@ img {
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
   font-size: 13px;
 }
@@ -499,6 +498,11 @@ img {
   display: none;
 }
 
+.topnav .social {
+  float: right;
+  display: block;
+}
+
 .PressReleaseRow {
   display: flex;
 }
@@ -512,9 +516,9 @@ img {
 .PressReleaseContainer {
   max-width: 90%;
   margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 1fr;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 30px;
 }
@@ -528,12 +532,17 @@ img {
     display: block;
   }
 
+  .topnav.responsive .social {
+    float: right;
+    display: block;
+  }
+
   .PressReleaseContainer {
     max-width: 90%;
     margin: 0 auto;
-  	display: grid;
-  	grid-template-columns: repeat(1, 1fr);
-  	grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 30px;
   }
@@ -548,6 +557,13 @@ img {
     right: 0;
     top: 0;
   }
+
+  .topnav.responsive .social {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   .topnav.responsive a {
     float: none;
     display: block;
